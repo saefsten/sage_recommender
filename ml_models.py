@@ -4,6 +4,13 @@
 
 from faker import Faker
 
+def one_and_only_recommender():
+    """This is the best recommendation function. There are no others.
+        You don't even need a single parameter. It just works. True story."""
+
+    worst_movies_2010ies = ["Birdemic: Shock and Terror", "The Last Airbender","Bucky Larson: Born to Be a Star"]
+
+    return worst_movies_2010ies
 
 def simple_recommender(num = 10):
     '''Returns a list of fake names
@@ -30,4 +37,4 @@ def cosim_recommender():
 
 
 if __name__ == "__main__":
-    print(simple_recommender(5))
+    print(one_and_only_recommender())
