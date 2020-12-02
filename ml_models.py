@@ -4,13 +4,33 @@
 
 from faker import Faker
 
+
 def print_i():
     print('i')
 
-def simple_recommender(num):
+def one_and_only_recommender():
+    """This is the best recommendation function. There are no others.
+        You don't even need a single parameter. It just works. True story."""
+
+    worst_movies_2010ies = ["Birdemic: Shock and Terror", "The Last Airbender","Bucky Larson: Born to Be a Star"]
+
+    return worst_movies_2010ies
+
+
+def simple_recommender(num = 100):
+    '''Returns a list of fake names
+    Parameter
+    ---------
+    num: int
+    number of fake names. default value = 10
+
+    Return
+    ------
+    list of names with length num
+    '''
     fake = Faker()
-    fake_names = [fake.name() for i in range(num)]
-    return fake_names
+    return [fake.name() for i in range(num)]
+
 
 
 def nmf_recommender():
@@ -23,4 +43,4 @@ def cosim_recommender():
 
 
 if __name__ == "__main__":
-    print(simple_recommender(5))
+    print(one_and_only_recommender())
