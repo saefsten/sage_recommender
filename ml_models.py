@@ -12,7 +12,8 @@ def one_and_only_recommender():
 
     return worst_movies_2010ies
 
-def simple_recommender(num = 10):
+
+def simple_recommender(num = 100):
     '''Returns a list of fake names
     Parameter
     ---------
@@ -25,6 +26,7 @@ def simple_recommender(num = 10):
     '''
     fake = Faker()
     return [fake.name() for i in range(num)]
+
 
 
 def nmf_recommender():
