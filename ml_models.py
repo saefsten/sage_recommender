@@ -4,6 +4,8 @@
 
 from faker import Faker
 
+def print_i():
+    print('i')
 
 def simple_recommender(num):
     fake = Faker()
