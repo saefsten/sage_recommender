@@ -12,9 +12,12 @@ def one_and_only_recommender():
 
     return worst_movies_2010ies
 
-def simple_recommender(num):
+def simple_recommender(num = 100):
     fake = Faker()
     fake_names = [fake.name() for i in range(num)]
+
+    conflict = "I love conflicts and 100 is more than 10."
+
     return fake_names
 
 
