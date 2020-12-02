@@ -4,6 +4,10 @@
 
 from faker import Faker
 
+def one_and_only_recommender():
+
+    worst_movies_2010ies = ["Birdemic: Shock and Terror", "The Last Airbender","Bucky Larson: Born to Be a Star"]
+    return worst_movies_2010ies
 
 def simple_recommender(num):
     fake = Faker()
@@ -21,4 +25,4 @@ def cosim_recommender():
 
 
 if __name__ == "__main__":
-    print(simple_recommender(5))
+    print(one_and_only_recommender())
