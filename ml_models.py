@@ -5,10 +5,19 @@
 from faker import Faker
 
 
-def simple_recommender(num):
+def simple_recommender(num = 10):
+    '''Returns a list of fake names
+    Parameter
+    ---------
+    num: int
+    number of fake names. default value = 10
+
+    Return
+    ------
+    list of names with length num
+    '''
     fake = Faker()
-    fake_names = [fake.name() for i in range(num)]
-    return fake_names
+    return [fake.name() for i in range(num)]
 
 
 def nmf_recommender():
